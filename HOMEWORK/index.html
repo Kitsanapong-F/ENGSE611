@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body> 
+    <header> <!--ส่วนหัวของเว็บไซต์-->
+        <h1>กฤษณพงศ์ ชัยสุ</h1>
+    </header>
+    <nav> <!--เมณูนำทาง-->
+        <a href="#img">รูปภาพ</a>
+        <br>
+        <a href="#introduce">แนะนำตัว</a>
+        <br>
+        <a href="#learn">กำลังศึกษา</a>
+        <br>
+        <a href="#table">วิชาที่เรียน</a>
+        <br>
+        <a href="#form">ส่งข้อความถึงฉัน</a>
+        <br>
+        <a href="#contact">ติดต่อ</a>
+        <br><br>
+    </nav>
+    <main> <!--เนื้อหาหลัก-->
+        <section id="img">
+            <img src="/img/DSCF2693.jpg" alt="kitsanapong" height="260" width="210">
+        </section>
+        <section id="introduce">
+            <h2>แนะนำตัว</h2>
+            <p><strong> ชื่อจริง </strong>กฤษณพงศ์<strong> นามสกุล </strong>ชัยสุ <strong> ชื่อเล่น </strong>เฟรม</p>
+        </section>
+        <section id ="learn">
+            <h2>กำลังศึกษา</h2>
+            <article>
+            <ul>
+                <li>Basic C language</li>
+                <li>Basic JAVA language</li>
+                <li>Basic HTML language</li>
+            </ul>
+            </article>
+        </section>
+        <section id = "table">
+            <table border="1">
+                <caption><strong>วิชาที่เรียน</strong></caption>
+                <tr>
+                    <th rowspan="2">ลำดับ</th>
+                    <th rowspan="2">รหัสวิชา</th>
+                    <th rowspan="2">ชื่อวิชา</th>
+                    <th colspan="3">หน่วยกิต</th>
+                    <th rowspan="2">อาจารย์</th>
+                    <th rowspan="2">ระดับ</th>
+
+                </tr>
+                <tr>
+                    <th>ท</th>
+                    <th>ป</th>
+                    <th>ร</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>ENGSE101</td>
+                    <td>Discrete mathematics</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>อ.อรษา สิระษากมล</td>
+                    <td>ปริญญาตรี</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ENGSE202</td>
+                    <td>Operating System and Server Configure</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>อ.ปิยพล ยืนยงสถาวร</td>
+                    <td>ปริญญาตรี</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>ENGSE204</td>
+                    <td>Object-Oriented Programming</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>อ.กิตินันต์ น้อยมณี</td>
+                    <td>ปริญญาตรี</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ENGSE218</td>
+                    <td>Computer Architecture and Organization</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>อ.อนุพงศ์ ไพโรจน์</td>
+                    <td>ปริญญาตรี</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ENGSE611</td>
+                    <td>Modern Web Technology Development</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>อ.นริศ กำแพงแก้ว</td>
+                    <td>ปริญญาตรี</td>
+                </tr>
+                   <tr>
+                    <td>6</td>
+                    <td>GEBIN702</td>
+                    <td>Innovation and Technology</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>อ.ภาคี ทิพยวงศ์</td>
+                    <td>ปริญญาตรี</td>
+                </tr>
+                   <tr>
+                    <td>7</td>
+                    <td>GEBLC103</td>
+                    <td>Academic English</td>
+                    <td></td>
+                    <td></td>
+                    <td>3</td>
+                    <td>อ.ศิริมน ณ เชียงใหม่</td>
+                    <td>ปริญญาตรี</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <section id = "form">
+            <form > <!--รับข้อมูล-->
+                <label>ชื่อของคุณ</label>
+                <br>
+                <input type="text" name="name">
+                <br><br>
+                <label>Emailของคุณ </label>
+                <br>
+                <input type="email" name="email">
+                <br><br>
+                <label>ส่งความคิดเห็นถึงฉัน</label>
+                <br>
+                <textarea name="textarea" id="textarea"></textarea>
+                <br><br>
+                <button type="submit">บันทึกข้อมูล</button>
+            </form>
+        </section>
+    </main>
+    <footer id = "contact"> <!--ส่วนท้าย-->
+        <p>ลิขสิทธิ์ © 2025 | ติดต่อ: 09chaisu@gmail.com</a> Github: <a href="https://github.com/Kitsanapong-F"  target="blank">Kitsanapong-F</a></p>
+    </footer>
+</body>
+</html>
