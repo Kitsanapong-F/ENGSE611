@@ -2,74 +2,82 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>สมัครสมาชิก</title>
 </head>
-<body>
-    <header>
-        <h1>TEST</h1>
-    </header>
-    <nav>
-        <a href="#img">รูป</a>
-    </nav>
-    <br>
-    <main>
-        <section id = "img">
-        <img src="/ENGSE611/img/pokemon-snorlax-aesthetic-preview-desktop-wallpaper.jpg" alt="snorlax" height="250" width="250">
-        </section>
-        <section>
-            <form >
-                <label> ชื่อของคุณ</label>
-                <input type="text" name="name" id="name">
-                <br><br>
-                <label >email</label>
-                <input type="email" name="email" id="email">
-                <br><br>
-                <label >เพศ</label>
-                <br>
-                <input type="checkbox" name="sex" id="man"> ชาย
-                <input type="checkbox" name="sex" id="female"> หญิง
-                <br><br>
-                <label >จังหวัด</label>
-                <select name="l" id="d">
-                    <option value="l">ลำปาง</option>
-                    <option value="C">เชียงใหม่</option>
-                </select>
-            </form>
-        </section>
-        <section>
-            <table border="1">
-                <tr>
-                    <th rowspan="2">ลำดับ</th>
-                    <th rowspan="2">ชื่อ</th>
-                    <th colspan="2">ข้อมูล</th>
-                </tr>
-                <tr > 
-                    <th>เพศ</th>
-                    <th>อายุ</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>เฟรม</td>
-                    <td>ชาย</td>
-                    <td>19</td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <h2>สิ่งที่เรียน</h2>
-            <article>
-                <ul>
-                    <li>c</li>
-                    <li>html</li>
-                    <li>java</li>
-                </ul>
-            </article>
-            
-        </section>
-    </main>
-    <footer>
-        <p>ลิขสิทธิ์ &copy; 2025</p>
-    </footer>
+<body bgcolor="#f0f2f5">
+    <br><br>
+    <form>
+        <table align="center" border="0" bgcolor="white" width="450" cellpadding="15" cellspacing="0" style="border-radius: 8px; font-family: sans-serif;">
+            <tr>
+                <td>
+                    <table width="100%" border="0">
+                        <tr>
+                            <td align="left">
+                                <h1 style="margin:0;">สมัคร</h1>
+                                <font color="grey">ง่ายและเร็ว</font>
+                            </td>
+                            <td align="right" valign="top"><font size="5" color="grey">X</font></td>
+                        </tr>
+                    </table>
+                    <hr color="#dadde1" size="1">
+                    
+                    <table width="100%" border="0" cellpadding="5">
+                        <tr>
+                            <td><input type="text" placeholder="ชื่อ" size="22"></td>
+                            <td><input type="text" placeholder="นามสกุล" size="22"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="email" placeholder="หมายเลขโทรศัพท์หรืออีเมล" style="width: 96%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="password" placeholder="รหัสผ่านใหม่" style="width: 96%;">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p><font size="2" color="grey">วันเกิด</font><br>
+                    <select name="day">
+                        <option>1</option><option>2</option><option>3</option>
+                    </select>
+                    <select name="month">
+                        <option>ม.ค.</option><option>ก.พ.</option><option>มี.ค.</option>
+                    </select>
+                    <select name="year">
+                        <option>2000</option><option>2001</option><option>2002</option>
+                    </select></p>
+
+                    <p><font size="2" color="grey">เพศ</font></p>
+                    <table width="100%" border="0" cellpadding="5">
+                        <tr>
+                            <td border="1" style="border: 1px solid #ccc;">
+                                หญิง <input type="radio" name="gender" value="female" style="float:right;">
+                            </td>
+                            <td border="1" style="border: 1px solid #ccc;">
+                                ชาย <input type="radio" name="gender" value="male" style="float:right;">
+                            </td>
+                            <td border="1" style="border: 1px solid #ccc;">
+                                กำหนดเอง <input type="radio" name="gender" value="other" style="float:right;">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p align="center">
+                        <font size="1" color="grey">
+                            เมื่อคลิก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุกกี้ของเรา<br>
+                            คุณอาจได้รับการแจ้งเตือนทาง SMS จากเรา
+                        </font>
+                    </p>
+                    <div align="center">
+                        <button type="submit" style="background-color: #00a400; color: white; padding: 10px 50px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                            สมัคร
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
