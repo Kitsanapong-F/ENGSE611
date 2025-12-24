@@ -67,10 +67,6 @@ button{
 .box-image{
     width: 250px;
     height: 315px;
-    background-image: url(/img/DSCF2693.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     border: 5px solid rgb(155, 119, 52);
 }
 
