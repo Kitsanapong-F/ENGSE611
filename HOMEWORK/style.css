@@ -50,8 +50,15 @@ button{
     border: 2px solid rgb(155, 119, 52);
 }
 
+button:hover{
+    background-color: rgb(192, 133, 56);
+    cursor: pointer;
+}
+
+
 
 /* class Selectors*/
+
 .nav a:hover{
     color: #bd7e20ea;
     background-color: rgb(190, 173, 151);
