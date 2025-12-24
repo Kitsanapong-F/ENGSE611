@@ -15,9 +15,37 @@ header, nav, main, footer {
 table {
     margin: auto;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #fde1b4;
     padding: 15px;
     border: 5px solid rgb(155, 119, 52);
+}
+
+input[type = "text"]{
+    padding: 8px;
+    border-radius: 30px;
+    background-color: #fde1b4;
+    border: 2px solid rgb(155, 119, 52);
+}
+
+input[type = "email"]{
+    padding: 8px;
+    border-radius: 30px;
+    background-color: #fde1b4;
+    border: 2px solid rgb(155, 119, 52);
+}
+
+textarea{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fde1b4;
+    border: 2px solid rgb(155, 119, 52);
+}
+
+button{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fde1b4;
+    border: 2px solid rgb(155, 119, 52);
 }
 
 
