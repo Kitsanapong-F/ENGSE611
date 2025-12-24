@@ -4,37 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-    <header> <!--ส่วนหัวของเว็บไซต์-->
+    <header id="main-header"> <!--ส่วนหัวของเว็บไซต์-->
         <h1>กฤษณพงศ์ ชัยสุ</h1>
     </header>
-    <nav> <!--เมณูนำทาง-->
+    <nav class="nav"> <!--เมณูนำทาง-->
         <a href="#img">รูปภาพ</a>
-        <br>
         <a href="#introduce">แนะนำตัว</a>
-        <br>
         <a href="#learn">กำลังศึกษา</a>
-        <br>
         <a href="#table">วิชาที่เรียน</a>
-        <br>
         <a href="#form">ส่งข้อความถึงฉัน</a>
-        <br>
         <a href="#contact">ติดต่อ</a>
-        <br><br>
     </nav>
     <main> <!--เนื้อหาหลัก-->
         <section id="img">
-            <img src="/img/DSCF2693.jpg" alt="kitsanapong" height="260" width="210">
+            <img class="box-image">
         </section>
         <section id="introduce">
-            <h2>แนะนำตัว</h2>
+            <h2 class="h2">แนะนำตัว</h2>
             <p><strong> ชื่อจริง </strong>กฤษณพงศ์<strong> นามสกุล </strong>ชัยสุ <strong> ชื่อเล่น </strong>เฟรม</p>
         </section>
         <section id ="learn">
-            <h2>กำลังศึกษา</h2>
+            <h2 class="h2">กำลังศึกษา</h2>
             <article>
-            <ul>
+            <ul class="ul">
                 <li>Basic C language</li>
                 <li>Basic JAVA language</li>
                 <li>Basic HTML language</li>
@@ -149,7 +144,7 @@
             </form>
         </section>
     </main>
-    <footer id = "contact"> <!--ส่วนท้าย-->
+    <footer id = "contact" class="nav"> <!--ส่วนท้าย-->
         <p>ลิขสิทธิ์ © 2025 | ติดต่อ: 09chaisu@gmail.com</a> Github: <a href="https://github.com/Kitsanapong-F"  target="blank">Kitsanapong-F</a></p>
     </footer>
 </body>
