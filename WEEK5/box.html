@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="week5.css">
+</head>
+<body>
+    <h2>CSS Box Model</h2>
+
+<h3>1) box-sizing: content-box (ค่าปกติ)</h3>
+<div class="box content-box">
+  ความกว้างที่กำหนด = 200px  
+  (ไม่รวม padding + border)
+</div>
+
+<h3>2) box-sizing: border-box</h3>
+<div class="box border-box">
+  ความกว้างที่กำหนด = 200px  
+  (รวม padding + border อยู่ใน 200px)
+</div>
+
+<div class="radius-20 box-4"></div>
+<div class="radius-50 box-3"></div>
+<div class="radius-top box-2"></div>
+<div class="circle box-1"></div>
+
+<h2>display:block</h2>
+    <p>
+        กินพื้นที่เต็มบรรทัด
+    </p>
+<div class="block-example-div">block 1</div>
+<div class="block-example-div">block 2</div>
+<h2>display:inline</h2>
+    <p>
+    อยู่ในบรรทัดเดียวกัน
+    </p>
+<div class="inline-block-example-span">inline1</div>
+<div class="inline-block-example-span">inline2inline2</div>
+<div class="inline-block-example-span">inline3</div>
+<h2>display:inline-block</h2>
+    <p>
+    อยู่ในบรรทัดเดียวกัน
+    </p>
+<div class="inline-block-example-div">box a</div>
+<div class="inline-block-example-div">box b</div>
+<div class="inline-block-example-div">box c</div>
+</body>
+</html>
