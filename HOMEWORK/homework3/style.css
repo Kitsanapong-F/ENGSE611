@@ -30,7 +30,7 @@
     cursor:pointer ;
     font-weight: bold;
 }
-
+/*กำหนดระยะห่างของบรรทัด*/
 .box-item p{
     margin: 3px;
     line-height: 1.2;
