@@ -27,6 +27,7 @@
     height: 100px;
     box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.4);
     cursor:pointer ;
+    font-weight: bold;
 }
 
 .box p{
