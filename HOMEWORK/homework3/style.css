@@ -1,10 +1,10 @@
 .flexbox{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    background-color: #f7eb80;
+    gap: 15px;
+    background-color: #FFF1A8;
     padding: 10px;
-    border: 2px solid #f7eb80;
+    border: 2px solid #FFF1A8;
     height: 200px;
     justify-content: center;
     align-items: center;
