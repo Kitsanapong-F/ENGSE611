@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    background-color: #ffe6e6;
+    background-color: #f7eb80;
     padding: 10px;
-    border: 2px solid #ffe6e6;
+    border: 2px solid #f7eb80;
     height: 200px;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,6 @@
     height: 90px;
     padding: 10px;
     border-radius: 10px 10px 10px 10px;
-    background-color:  #ff5151;
 }
 
 .box-shadow{
@@ -37,4 +36,16 @@
 
 .p{
     text-align: center;
+}
+
+.Wei{
+    background-color: #B6C4E6;
+}
+
+.Shu{
+    background-color: #BFE3C0;
+}
+
+.Wu{
+    background-color: #F2B6B6;
 }
