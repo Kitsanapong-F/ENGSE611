@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.box{
+.box-item{
     color: rgb(0, 0, 0);
     width: 230px;
     height: 90px;
@@ -30,7 +30,7 @@
     font-weight: bold;
 }
 
-.box p{
+.box-item p{
     margin: 3px;
     line-height: 1.2;
 }
