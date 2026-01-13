@@ -1,0 +1,37 @@
+   /* Basic reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 1. CSS Grid Setup */
+        .container {
+            display: grid;
+            /* Left: 25%, Right: 75% */
+            grid-template-columns: 25% 75%; 
+            min-height: 100vh;
+        }
+
+        /* 2. Styling sections with different background colors */
+        .menu {
+            background-color: #3498db; /* Blue */
+            color: white;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #ecf0f1; /* Light Gray */
+            padding: 20px;
+        }
+
+        /* 3. Responsive Layout (Screen width < 600px) */
+        @media (max-width: 600px) {
+            .container {
+                /* Change to a single column (stacked) */
+                grid-template-columns: 1fr;
+            }
+            
+            .menu, .content {
+                width: 100%;
+            }
+        }
