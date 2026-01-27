@@ -1,0 +1,14 @@
+:root{
+    --pading: 16px;
+    --bg-color: #f4f6f8;
+    --card-bg : #ffffff;
+    --text-coler:#1f2933;
+}
+
+@media (min-width:768px){
+    :root {
+        --pading: 32px;
+    }
+}
+
+body
