@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+  
+    <button onclick="rundemo()">runcode</button>
+    <pre id="outputbox"></pre>
+    <button onclick="runStringdemo()">runcode</button>
+    <pre id="output"></pre>
+    <button onclick="runOperators()">runcode</button>
+    <pre id="output1"></pre>
+    <button onclick="runDemo1()">runcode</button>
+    <pre id="box"></pre>
+    <script>
+    function rundemo(){
+        console.clear();
+        const output = [];
+
+        let studentName = 'สมชาย';
+        let age = 20;
+        let isStudent = true;
+        const universityName = 'มหาลับเทคโนโลยี';
+
+        output.push("ชื่อ :" + studentName);
+        output.push("อายุ :" + age);
+
+        age = 21; // เปลี่ยนค่าเป็น 21 เพื่อให้เห็นความเปลี่ยนแปลง
+        output.push("อายุใหม่ :" + age);
+
+        try {
+            // การพยายามเปลี่ยนค่า const จะทำให้เกิด Error
+            universityName = 'มหาลับใหม่'; 
+        }
+        catch(e) {
+            // แก้ไขจาก massage เป็น message
+            output.push("Error: " + e.message); 
+            console.error(e.message);
+        }
+        document.getElementById("outputbox").textContent = output.join("\n");
+    }
+    
+    function runStringdemo(){
+        const out = [];
+
+        let text = 'JavaScript good';
+        let firstName = 'Frame'; // แก้ไขตัวสะกดจาก fistName เป็น firstName
+
+        // Template Literal
+        out.push(`สวัสดี ${firstName}!`);
+        
+        // String Methods
+        out.push("ความยาว :" + text.length);
+        
+        // ใส่ () ต่อท้าย method
+        out.push("ตัวใหญ่ :" + text.toUpperCase());
+        out.push("ตัวเล็ก :" + text.toLowerCase());
+        
+        out.push('มี "Java"? ' + text.includes('Java'));
+        out.push('ตำแหน่ง "Script": ' + text.indexOf('Script'));
+        out.push("ตัดคำ (0-4): " + text.slice(0, 4));
+
+        // เปลี่ยนคำที่ตรงกับตัวแปร text จริงๆ
+        out.push("แทนที่: " + text.replace('good', 'สุดยอด'));
+
+        // แสดงผลบนหน้าเว็บ
+        document.getElementById("output").textContent = out.join("\n");
+        
+        console.clear();
+        out.forEach(line => console.log(">" + line));
+    }
+
+function runOperators() {
+    const out = [];
+
+    // 1) Arithmetic (คณิตศาสตร์)
+    let a = 10, b = 3;
+    out.push("1) Arithmetic");
+    out.push("10 + 3 = " + (a + b));
+    out.push("10 - 3 = " + (a - b));
+    out.push("10 * 3 = " + (a * b));
+    out.push("10 / 3 = " + (a / b));
+    out.push("10 % 3 = " + (a % b));
+    out.push("--------------------");
+
+    // 2) Comparison (เปรียบเทียบ)
+    out.push("2) Comparison");
+    out.push("5 > 3: " + (5 > 3));
+    out.push("5 == '5': " + (5 == '5'));
+    out.push("5 === '5': " + (5 === '5'));
+    out.push("--------------------");
+
+    // 3) Logical (ตรรกะ)
+    out.push("3) Logical");
+    out.push("true && false: " + (true && false));
+    out.push("true || false: " + (true || false));
+    out.push("!true: " + (!true));
+    out.push("--------------------");
+
+    // 4) Assignment (กำหนดค่า)
+    let x = 10;
+    out.push("4) Assignment");
+    out.push("x = 10 -> x += 5 = " + (x += 5));
+    out.push("x -= 3 = " + (x -= 3));
+    out.push("x *= 2 = " + (x *= 2));
+    out.push("--------------------");
+
+    // 5) Increment / Decrement (เพิ่ม/ลดค่า)
+    let y = 5;
+    out.push("5) Increment / Decrement");
+    out.push("y = 5 -> y++ = " + (y++));
+    out.push("หลัง y++ ค่า y = " + y);
+    out.push("y-- = " + (y--));
+    out.push("หลัง y-- ค่า y = " + y);
+    out.push("--------------------");
+
+    // 6) Ternary (เงื่อนไขแบบย่อ)
+    let age = 18;
+    let result = age >= 18 ? "ผู้ใหญ่" : "เยาวชน";
+    out.push("6) Ternary Operator");
+    out.push("age = 18 -> result = " + result);
+    out.push("--------------------");
+
+    // แสดงผลบนหน้าเว็บ
+    document.getElementById("output1").textContent = out.join("\n");
+
+    // แสดงผลใน Console
+    console.clear();
+    out.forEach(line => console.log(line));
+
+}
+ function runDemo1(){
+        console.clear();
+        const output = [];
+
+        score = 72;
+
+        if(score >= 50){
+            output.push("ผลสอบ : ผ่าน ");
+            console.log("ผลสอบ : ผ่าน ");
+        }
+        else{
+            output.push("ผลสอบ : ไม่ผ่าน ");
+            console.log("ผลสอบ : ไม่ผ่าน ");
+        }
+
+        for(let i = 0 ; i<5 ;i++){
+            output.push("รอบที่ : "+i);
+            console.log("รอบที่ : ",i);
+        }
+
+        document.getElementById("box").textContent = output.join("\n");
+    }
+</script>
+</body>
+</html>
