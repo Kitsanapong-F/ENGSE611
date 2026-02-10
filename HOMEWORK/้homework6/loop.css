@@ -1,13 +1,6 @@
-.outputBox {
+.output{
     white-space: pre-line; /* ทำให้ \n ใน JavaScript แสดงผลเป็นการขึ้นบรรทัดใหม่บนหน้าเว็บ */
     margin-top: 20px;
     padding: 10px;
     display: inline-block;
-}
-
-.btn{
-    width: 60x;
-    height: 50px;
-    border-radius: 25px;
-    background-color: #a0e7e5;
 }

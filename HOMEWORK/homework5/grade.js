@@ -1,7 +1,7 @@
 function show(){
     console.clear();
     const output = [];
-    let score = 5000;
+    let score = Math.floor(Math.random() * 101)
     let grade = "";
     let text =  "";
     let status = "";
