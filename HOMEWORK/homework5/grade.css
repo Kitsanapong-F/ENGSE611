@@ -1,13 +1,32 @@
-.outputBox {
-    white-space: pre-line; /* ทำให้ \n ใน JavaScript แสดงผลเป็นการขึ้นบรรทัดใหม่บนหน้าเว็บ */
-    margin-top: 20px;
-    padding: 10px;
-    display: inline-block;
+body {
+    background-color: #ffcece; 
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
 }
 
-.btn{
-    width: 60x;
-    height: 50px;
-    border-radius: 25px;
-    background-color: #a0e7e5;
+.outputBox {
+    white-space: pre-line;
+    margin-top: 20px;
+    padding: 20px;
+    display: inline-block;
+    background-color: #000000; 
+    border-radius: 10px;
+    min-width: 250px;
+    line-height: 1.8;
+}
+
+.btn {
+    width: 100px; 
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff0000; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f15d5d;
 }
